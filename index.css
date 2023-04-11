@@ -1,0 +1,55 @@
+* {
+    user-select: none;
+}
+
+*:not(.static):not(.static *) {
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    background: antiquewhite;
+    text-align: center;
+}
+
+.margin-left {
+    margin-left: 5vw;
+}
+
+#fg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vmax;
+    background-image: url("noise.png");
+    background-repeat: repeat-y;
+    z-index: 1000;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+#function > table {
+    margin-left: 50%;
+    transform: translate(-100%, -75%);
+    border: 2.5px solid #202020;
+    border-collapse: collapse;
+}
+
+#function > table * {
+    border: 2.5px solid #202020;
+    border-collapse: collapse;
+}
+
+#function > iframe {
+    float: right;
+}
+
+body:nth-child(even):not(#fg) {
+    background-color: blanchedalmond;
+}
